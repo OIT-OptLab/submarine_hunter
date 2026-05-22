@@ -1,0 +1,19 @@
+[project]
+name = "submarine-hunter"
+version = "0.1.0"
+description = "Open Lab submarine hunting game with Bayesian AI and Pygame UI"
+requires-python = ">=3.10"
+dependencies = [
+    "pygame>=2.5.0",
+    "numpy>=1.24",
+]
+
+[project.scripts]
+submarine-hunter = "submarine_hunter.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

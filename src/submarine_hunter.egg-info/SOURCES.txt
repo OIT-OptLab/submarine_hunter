@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/submarine_hunter/__init__.py
+src/submarine_hunter/__main__.py
+src/submarine_hunter/ai.py
+src/submarine_hunter/config.py
+src/submarine_hunter/game.py
+src/submarine_hunter/models.py
+src/submarine_hunter/ui.py
+src/submarine_hunter.egg-info/PKG-INFO
+src/submarine_hunter.egg-info/SOURCES.txt
+src/submarine_hunter.egg-info/dependency_links.txt
+src/submarine_hunter.egg-info/entry_points.txt
+src/submarine_hunter.egg-info/requires.txt
+src/submarine_hunter.egg-info/top_level.txt
+tests/test_logic.py

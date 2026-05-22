@@ -1,0 +1,2 @@
+[console_scripts]
+submarine-hunter = submarine_hunter.__main__:main

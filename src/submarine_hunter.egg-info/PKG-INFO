@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: submarine-hunter
+Version: 0.1.0
+Summary: Open Lab submarine hunting game with Bayesian AI and Pygame UI
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: pygame>=2.5.0
+Requires-Dist: numpy>=1.24
+Dynamic: license-file
