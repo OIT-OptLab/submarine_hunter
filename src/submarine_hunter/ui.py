@@ -349,6 +349,55 @@ class App:
             self.small_font,
             COLOR_MUTED,
         )
+        self.draw_text(
+            "難易度の説明",
+            (820, 220),
+            self.font,
+             COLOR_ACCENT,
+        )
+
+        self.draw_text(
+            "かんたん : 6×6マス ・ 潜水艦2隻",
+            (820, 260),
+            self.small_font,
+        )
+
+        self.draw_text(
+            "ふつう : 8×8マス ・ 潜水艦3隻",
+            (820, 300),
+            self.small_font,
+        )
+
+        self.draw_text(
+            "むずかしい : 10×10マス ・ 潜水艦4隻",
+            (820, 340),
+            self.small_font,
+        )
+        # 得点説明
+        self.draw_text(
+            "得点ルール",
+            (820, 420),
+            self.font,
+            COLOR_ACCENT,
+        )
+
+        self.draw_text(
+            "潜水艦を直撃 : +1点",
+            (820, 460),
+            self.small_font,
+        )
+
+        self.draw_text(
+            "潜水艦を撃沈 : +2点",
+            (820, 495),
+            self.small_font,
+        )
+
+        self.draw_text(
+            "より高得点の方が勝利",
+            (820, 530),
+            self.small_font,
+        )
 
     def draw_playing(self) -> None:
         assert self.game is not None
@@ -588,7 +637,7 @@ class App:
         pygame.draw.ellipse(self.screen, COLOR_SUB_EDGE, tower)
 
     def draw_legend(self, x: int, y: int) -> None:
-        panel = pygame.Rect(x - 20, y - 18, 300, 210)
+        panel = pygame.Rect(x - 20, y - 18, 300, 240)
         pygame.draw.rect(self.screen, COLOR_PANEL, panel, border_radius=16)
         self.draw_text("凡例", (x, y), self.small_font, COLOR_MUTED)
 
@@ -652,7 +701,7 @@ class App:
 
         self.draw_heatmap_panel(735, 92, 320, 320, heatmap, mode_text, history_item)
 
-        panel = pygame.Rect(735, 430, 340, 220)
+        panel = pygame.Rect(735, 430, 340, 280)
         pygame.draw.rect(self.screen, COLOR_PANEL, panel, border_radius=18)
 
         y = 454
