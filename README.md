@@ -17,6 +17,15 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
+
+### 日本語フォントのインストール
+
+Linux環境での実行に必要です。
+```bash
+sudo apt update
+sudo apt install -y fonts-takao fonts-noto-cjk
+sudo locale-gen ja_JP.UTF-8
+```
 インストール後，ターミナルを開き直してから，以下に進んでください。
 
 
