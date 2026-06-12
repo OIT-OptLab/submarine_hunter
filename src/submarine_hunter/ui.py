@@ -357,19 +357,19 @@ class App:
         )
 
         self.draw_text(
-            "かんたん : 6×6マス ・ 潜水艦2隻",
+            "かんたん : 8×8マス ・ 潜水艦2隻",
             (820, 260),
             self.small_font,
         )
 
         self.draw_text(
-            "ふつう : 8×8マス ・ 潜水艦3隻",
+            "ふつう : 10×10マス ・ 潜水艦3隻",
             (820, 300),
             self.small_font,
         )
 
         self.draw_text(
-            "むずかしい : 10×10マス ・ 潜水艦4隻",
+            "むずかしい : 12×12マス ・ 潜水艦3隻",
             (820, 340),
             self.small_font,
         )
@@ -642,10 +642,10 @@ class App:
         self.draw_text("凡例", (x, y), self.small_font, COLOR_MUTED)
 
         items = [
-            ("直撃", "hit"),
-            ("近い", "near"),
-            ("反応あり", "weak"),
-            ("反応なし", "none"),
+            ("直撃 (距離0)", "hit"),
+            ("近い (距離1〜3)", "near"),
+            ("反応あり (距離4〜5)", "weak"),
+            ("反応なし (距離6以上)", "none"),
             ("撃沈艦影", "sub"),
             ("最新の爆撃", "latest"),
         ]
